@@ -1,0 +1,76 @@
+/* Define uma classe para o contêiner do cabeçalho */
+.container__cabecalho {
+    display: flex; /* Utiliza flexbox para organizar os itens em uma linha */
+    justify-content: space-around; /* Distribui os itens igualmente ao longo do contêiner */
+    background-color: #d3d3d3; /* Define a cor de fundo */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+}
+
+/* Define o estilo para o elemento com o ID 'logo' */
+#logo {
+    width: 8rem; /* Define a largura do logo */
+    height: 8rem; /* Define a altura do logo */
+}
+
+/* Define uma classe para a lista de menu */
+.lista__menu {
+    list-style: none; /* Remove os marcadores de lista */
+    display: inline-flex; /* Exibe os itens em linha */
+    background-color: #00ade7; /* Define a cor de fundo */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    padding: 5px; /* Adiciona padding ao redor da lista */
+}
+
+/* Define uma classe para os itens da lista de menu */
+.lista__item {
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin: 0 20px; /* Adiciona margem horizontal aos itens */
+}
+
+/* Define uma classe para os links dentro dos itens da lista de menu */
+.lista__link {
+    --s: 0.1em; /* Define a espessura da linha */
+    --c: #00FF94; /* Define a cor do efeito de hover */
+    text-decoration: none; /* Remove a decoração padrão do link */
+    font-weight: bold; /* Define o texto como negrito */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o link */
+    color: #ffffff00; /* Define a cor do texto como transparente */
+    padding-bottom: var(--s); /* Adiciona padding inferior igual à espessura da linha */
+    background: linear-gradient(90deg, var(--c) 50%, #000 0)
+    calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat; /* Define gradientes de fundo para o efeito de hover */
+    -webkit-background-clip: text, padding-box; /* Define a área de clipagem do fundo no texto e no padding */
+    background-clip: text, padding-box; /* Define a área de clipagem do fundo no texto e no padding */
+    transition: 0.5s; /* Define a duração da transição */
+}
+
+/* Define o efeito de hover para os links */
+.lista__link:hover {
+    --_p: 100%; /* Define a largura do efeito de hover como 100% */
+}
+
+/* Define estilos para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    .container__cabecalho {
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: flex-start; /* Alinha os itens ao início do contêiner */
+        padding: 5px; /* Adiciona padding ao contêiner */
+    }
+
+    .lista__menu {
+        display: flex; /* Exibe os itens em flexbox */
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        width: 100%; /* Define a largura como 100% do contêiner pai */
+    }
+
+    .lista__item {
+        font-size: 18px; /* Define o tamanho da fonte */
+        margin: 10px 0; /* Adiciona margem vertical aos itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #logo {
+        width: 5rem; /* Define a largura do logo */
+        height: 5rem; /* Define a altura do logo */
+    }
+}
