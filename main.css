@@ -26,8 +26,8 @@
     left: 50%; /* Alinha a esquerda do contêiner ao meio horizontalmente */
     transform: translateX(-50%); /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto */
-    color: white; /* Define a cor do texto como branca */
-    background-color: rgba(0, 0, 0, 0.5); /* Define o fundo como preto com 50% de opacidade */
+    color: #ffffff; /* Define a cor do texto como branca */
+    background-color: #00000080; /* Define o fundo como preto com 50% de opacidade */
     padding: 10px; /* Adiciona padding ao redor do texto */
     border-radius: 5px; /* Adiciona bordas arredondadas */
 }
@@ -159,7 +159,7 @@
 
 .lista__link__contatos{
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .lista__item__contatos{
