@@ -14,7 +14,7 @@
 .banner {
     padding-top: 5px; /* Adiciona um pequeno padding no topo */
     width: 100%; /* Define a largura como 100% do elemento pai */
-    max-width: 1920px; /* Define a largura máxima */
+    max-width: 3840px; /* Define a largura máxima */
     height: auto; /* Define a altura automática */
     max-height: 500px; /* Define a altura máxima */
 }
@@ -54,7 +54,7 @@
 
 /* Define uma classe para um contêiner de seção 'sobre' */
 .container__sobre {
-    display: grid; /* Utiliza flexbox para organizar os itens em uma linha */
+    display: flex; /* Utiliza flexbox para organizar os itens em uma linha */
     grid-template-columns: 50% 50%;
     align-items: center; /* Alinha verticalmente os itens ao centro */
     justify-content: space-between; /* Adiciona espaço entre os itens para melhor layout */
