@@ -96,6 +96,24 @@
     min-height: 100vh;
 }
 
+.container__servicos__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.conteudo__slide{
+    margin: 10px 40px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 10px;
+}
+
 /* Define estilos para o título dentro da seção 'serviços' */
 .titulo__servicos {
     padding-top: 50px; /* Adiciona padding superior */
@@ -109,6 +127,13 @@
 }
 
 /* Define estilos para textos adicionais dentro da seção 'serviços' */
+
+.card__imagem, .conteudo__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
 
 .card__imagem{
     position: relative;
