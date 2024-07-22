@@ -93,15 +93,7 @@
     background-color: #d3d3d3; /* Define a cor de fundo */
     margin-bottom: 50px;
     padding-bottom: 60px;
-}
-
-/* Define uma classe para o contêiner de imagens na seção 'serviços' */
-.container__imagens__servicos {
-    display: grid; /* Utiliza grid layout */
-    grid-template-columns: 550px 550px 550px; /* Define três colunas de 550px cada */
-    gap: 40px; /* Define o espaço entre as colunas */
-    justify-content: center; /* Centraliza o grid horizontalmente */
-    margin-top: 50px; /* Adiciona margem superior */
+    min-height: 100vh;
 }
 
 /* Define estilos para o título dentro da seção 'serviços' */
@@ -117,30 +109,18 @@
 }
 
 /* Define estilos para textos adicionais dentro da seção 'serviços' */
-.texto__servicos__1 {
-    margin-top: 20px; /* Adiciona margem superior */
-    padding: 0 50px 20px 50px; /* Adiciona padding horizontal e inferior */
-    text-align: center; /* Centraliza o texto */
-    color: #777777; /* Define a cor do texto */
+
+.card__imagem{
+    position: relative;
+    height: 300px;
+    width: 300px;
 }
 
-/* Define estilos para elementos específicos dentro da seção 'serviços' */
-.servicos__1 {
-    border: 1px solid white; /* Adiciona uma borda branca */
-    background-color: white; /* Define a cor de fundo */
-    border-radius: 20px;
+.card__imagem .card__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-
-/* Define estilos para as imagens dentro da seção 'serviços' */
-.imagem__servicos__1 {
-    width: 500px; /* Define a largura da imagem */
-    height: 250px; /* Define a altura da imagem */
-    margin-top: 50px; /* Adiciona margem superior */
-    padding-bottom: 50px; /* Adiciona padding inferior */
-}
-
-
-
 .container__contato{
     display: grid;
     grid-template-columns: 70px 300px 100px 300px 300px;
