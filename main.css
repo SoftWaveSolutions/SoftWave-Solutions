@@ -1,16 +1,3 @@
-/* Define uma classe para um elemento deslizante (slide) */
-.slide {
-    position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
-    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do elemento */
-}
-
-/* Define uma classe para itens dentro de um slide */
-.slide-item {
-    display: none; /* Oculta o item por padrão */
-    position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
-}
-
-/* Define uma classe para banners */
 .banner {
     padding-top: 5px; /* Adiciona um pequeno padding no topo */
     width: 100%; /* Define a largura como 100% do elemento pai */
@@ -21,11 +8,6 @@
 
 /* Define uma classe para um contêiner de texto dentro de um banner */
 .container__texto {
-    position: absolute; /* Define a posição como absoluta em relação ao elemento pai */
-    top: 50%; /* Alinha o topo do contêiner ao meio verticalmente */
-    left: 50%; /* Alinha a esquerda do contêiner ao meio horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    text-align: center; /* Centraliza o texto */
     color: #ffffff; /* Define a cor do texto como branca */
     background-color: #00000080; /* Define o fundo como preto com 50% de opacidade */
     padding: 10px; /* Adiciona padding ao redor do texto */
@@ -45,11 +27,6 @@
 /* Define o tamanho da fonte para o texto dentro do banner */
 .texto__banner {
     font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
-}
-
-/* Torna o primeiro item do slide visível */
-.slide-item:first-child {
-    display: block; /* Exibe o item */
 }
 
 /* Define uma classe para um contêiner de seção 'sobre' */
