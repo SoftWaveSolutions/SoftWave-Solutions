@@ -302,7 +302,7 @@ function goToIndexSlide(index) {
 
 slideInitial();
 
-var swiper = new Swiper(".slide-content", {
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
