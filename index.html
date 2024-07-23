@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftWave Solutions - Início</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -73,26 +74,29 @@
                 <center><h1 class="titulo__servicos"> Serviços </h1></center>
                 <center><p class="texto__servicos"> Levamos aos nossos clientes a melhor experiência e qualidade com os nossos serviços e produtos. </p></center>
             </nav>
-            <nav class="container__servicos__slide">
-                <div class="container__slide">
-                    <div class="conteudo__slide">
-                        <div class="card-wrapper">
-                            <div class="card">
-                                <div class="conteudo__slide">
-                                    <span class="sobreposicao"></span>
-                                    <div class="card__imagem">
-                                        <img src="img/undraw_maintenance_re_59vn.svg" alt="Manutenção de equipamentos" class="card__img">
-                                    </div>
+        </section>
+        <section class="container__servicos__slide">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="img/undraw_maintenance_re_59vn.svg" alt="Manutenção de equipamentos" class="card-img">
                                 </div>
-                                <div class="conteudo__card">
-                                    <h2 class="servicos__titulo">Manutenção</h2>
-                                    <p class="servicos__texto">Oferecemos diagnósticos precisos, reparos rápidos e manutenção preventiva para computadores, servidores, impressoras e outros dispositivos. Nossa equipe especializada está pronta para resolver problemas técnicos, substituir peças danificadas e otimizar o desempenho de seus equipamentos, minimizando o tempo de inatividade e garantindo a continuidade das suas operações.</p>
-                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="servicos__titulo">Manutenção</h2>
+                                <p class="servicos__texto">Oferecemos diagnósticos precisos, reparos rápidos e manutenção preventiva para computadores, servidores, impressoras e outros dispositivos. Nossa equipe especializada está pronta para resolver problemas técnicos, substituir peças danificadas e otimizar o desempenho de seus equipamentos, minimizando o tempo de inatividade e garantindo a continuidade das suas operações.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+            </div>
         </section>
         <section class="container__contato">
             <div>
@@ -127,6 +131,7 @@
     <footer class="rodape">
         <p class="texto__rodape">All Rights Reserved. © 2024 | SoftWave Solutions</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
+<script src="js/scripts.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 </html>
