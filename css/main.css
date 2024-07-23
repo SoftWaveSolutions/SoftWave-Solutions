@@ -1,3 +1,5 @@
+
+/* Define estilos para o banner */
 .banner {
     padding-top: 5px; /* Adiciona um pequeno padding no topo */
     width: 100%; /* Define a largura como 100% do elemento pai */
@@ -64,132 +66,10 @@
     margin-left: 200px;
 }
 
-/* Define uma classe para o contêiner da seção 'serviços' */
-.container__servicos {
-    margin-top: 50px; /* Adiciona margem superior */
-    background-color: #d3d3d3; /* Define a cor de fundo */
-}
-
-.container__servicos__slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    
-}
-
-.slide-container{
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-    background-color: #d3d3d3;
-}
-
-.slide-content{
-    margin: 0px 40px;
-}
-
-.card{
-
-    border-radius: 25px;
-    background-color: #fff;
-}
-
-.image-content, .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-/* Define estilos para o título dentro da seção 'serviços' */
-.titulo__servicos {
-    padding-top: 50px; /* Adiciona padding superior */
-    margin-bottom: 20px; /* Adiciona margem inferior */
-    font-size: 40px; /* Define o tamanho da fonte */
-}
-
-/* Define estilos para o texto dentro da seção 'serviços' */
-.texto__servicos {
-    font-size: 18px; /* Define o tamanho da fonte */
-}
-
-/* Define estilos para textos adicionais dentro da seção 'serviços' */
-
-.card-image{
-    position: relative;
-    height: 250px;
-    width: 250px;
-    padding: 3px;
-    background-color: #fff;
-}
-
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-}
-
-.servicos__titulo{
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px;
-}
-
-.servicos__texto{
-    font-size: 14px;
-    color: #777777;
-    text-align: center;
-}
-
-.container__contato{
-    display: grid;
-    grid-template-columns: 70px 300px 100px 300px 300px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo__contato{
-    width: 12rem;
-    height: 12rem;
-}
-
-.lista__contatos{
-    list-style: none;
-}
-
-.lista__link__contatos{
-    text-decoration: none;
-    color: #000000;
-}
-
-.lista__item__contatos{
-    margin-bottom: 10px;
-}
-
-.titulo__contato_1{
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-.titulo__contato_2{
-    padding-bottom: 10px;
-}
-
-.texto__contato_2{
-    margin-bottom: 8px;
-}
-
-.container__botao{
+/* Define uma classe para o contêiner da seção 'botão' */
+.container__botao {
     display: grid;
     justify-content: center;
-
 }  
 
 .button-container {
@@ -231,21 +111,133 @@
     place-self: center;
 }
 
-.container__sobre1{
+/* Define uma classe para o contêiner da seção 'serviços' */
+.container__servicos {
+    margin-top: 50px; /* Adiciona margem superior */
+    background-color: #d3d3d3; /* Define a cor de fundo */
+}
+
+/* Define estilos para o título dentro da seção 'serviços' */
+.titulo__servicos {
+    padding-top: 50px; /* Adiciona padding superior */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 40px; /* Define o tamanho da fonte */
+}
+
+/* Define estilos para o texto dentro da seção 'serviços' */
+.texto__servicos {
+    font-size: 18px; /* Define o tamanho da fonte */
+}
+
+.container__servicos__slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.servico-texto{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+}
+
+/* Define estilos para o contêiner da seção 'contato' */
+.container__contato {
+    display: grid;
+    grid-template-columns: 70px 300px 100px 300px 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo__contato {
+    width: 12rem;
+    height: 12rem;
+}
+
+.lista__contatos {
+    list-style: none;
+}
+
+.lista__link__contatos {
+    text-decoration: none;
+    color: #000000;
+}
+
+.lista__item__contatos {
+    margin-bottom: 10px;
+}
+
+.titulo__contato_1 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo__contato_2 {
+    padding-bottom: 10px;
+}
+
+.texto__contato_2 {
+    margin-bottom: 8px;
+}
+
+.container__sobre1 {
     justify-content: center;
 }
 
-.lista__sobre__1{
+.lista__sobre__1 {
     list-style: none;
     text-align: center;
 }
 
-.lista__item__sobre__1{
+.lista__item__sobre__1 {
     padding: 0 20px 30px 20px;
 }
 
-.lista__sobre__2{
-    
+.lista__sobre__2 {
     border: solid 3px #00FF94;
     display: flex;
     justify-content: center;
@@ -254,11 +246,11 @@
     text-align: center;
 }
 
-.lista__item__sobre__2{
+.lista__item__sobre__2 {
     padding: 30px 20px 30px 20px;
 }
 
-.texto__valores{
+.texto__valores {
     font-weight: bold;
     font-size: 26px;
 }
@@ -280,3 +272,16 @@
     counter-increment: list;
 }
 
+/* Define uma classe para o rodapé */
+.rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Define estilos para o texto dentro do rodapé */
+.texto__rodape {
+    margin: 0;
+    font-size: 14px;
+}
