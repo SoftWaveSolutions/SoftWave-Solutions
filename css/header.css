@@ -15,7 +15,7 @@
 /* Define uma classe para a lista de menu */
 .lista__menu {
     list-style: none; /* Remove os marcadores de lista */
-    display: inline-flex; /* Exibe os itens em linha */
+    display: flex; /* Exibe os itens em linha */
     background-color: #00ade7; /* Define a cor de fundo */
     border-radius: 5px; /* Adiciona bordas arredondadas */
     padding: 5px; /* Adiciona padding ao redor da lista */

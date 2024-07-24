@@ -1,0 +1,127 @@
+.container__sobre {
+    display: flex; /* Utiliza flexbox para organizar os itens em uma linha */
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between; /* Adiciona espaço entre os itens para melhor layout */
+    margin-top: 50px; /* Adiciona margem superior */
+}
+
+/* Define uma classe para o texto dentro da seção 'sobre' */
+.container__texto__sobre {
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+    margin-right: 200px; /* Adiciona espaço à direita do texto para separar da imagem */
+    margin-left: 100px; /* Adiciona espaço à esquerda do texto */
+    align-items: center;
+}
+
+/* Define estilos para o título dentro da seção 'sobre' */
+.titulo__sobre {
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 40px; /* Define o tamanho da fonte */
+}
+
+/* Define estilos para o texto dentro da seção 'sobre' */
+.texto__sobre {
+    font-size: 18px; /* Define o tamanho da fonte */
+}
+
+/* Define uma classe para a imagem dentro da seção 'sobre' */
+.imagem__sobre {
+    width: 450px; /* Define a largura da imagem */
+    height: 350px; /* Define a altura da imagem */
+    margin-right: 300px; /* Adiciona espaço à direita da imagem */
+}
+
+.container__sobre1 {
+    justify-content: center;
+}
+
+.lista__sobre__1 {
+    list-style: none;
+    text-align: center;
+}
+
+.lista__item__sobre__1 {
+    padding: 0 20px 30px 20px;
+}
+
+.lista__sobre__2 {
+    border: solid 3px #00FF94;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+.lista__item__sobre__2 {
+    padding: 30px 20px 30px 20px;
+}
+
+.texto__valores {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.lista__sobre__1 .lista__item__sobre__1, .lista__sobre__2 .lista__item__sobre__2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.lista__sobre__1 .lista__item__sobre__1::before {
+    color: #007BFF;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.lista__sobre__2 .lista__item__sobre__2 {
+    counter-increment: list;
+}
+
+/* Define uma classe para o contêiner da seção 'botão' */
+.container__botao {
+    display: grid;
+    justify-content: center;
+}  
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px 20px 20px;
+    border: solid 1px #ccc; 
+    padding: 30px 10px 30px 10px;
+}
+
+.botao__sobre {
+    padding: 10px 250px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--cor-principal);
+    border-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Propriedades a serem animadas */
+}
+
+.botao__sobre:hover {
+    background-color: #00FF94; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+#info {
+    margin-top: 20px;
+    padding: 20px;
+    
+    background-color: #fff;
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    place-self: center;
+}

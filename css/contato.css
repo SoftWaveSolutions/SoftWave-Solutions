@@ -1,0 +1,41 @@
+.container__contato {
+    display: grid;
+    grid-template-columns: 70px 300px 100px 300px 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo__contato {
+    width: 12rem;
+    height: 12rem;
+}
+
+.lista__contatos {
+    list-style: none;
+}
+
+.lista__link__contatos {
+    text-decoration: none;
+    color: #000000;
+}
+
+.lista__link__contatos:hover{
+    text-decoration: unde;
+}
+
+.lista__item__contatos {
+    margin-bottom: 10px;
+}
+
+.titulo__contato_1 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo__contato_2 {
+    padding-bottom: 10px;
+}
+
+.texto__contato_2 {
+    margin-bottom: 8px;
+}
