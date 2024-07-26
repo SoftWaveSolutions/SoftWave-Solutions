@@ -46,9 +46,15 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-    .texto__contato_2, .titulo__contato_2, .titulo__contato_1, .lista__link__contatos, .texto__contato_1{
         text-align: center;
+    }
+    .container__contato{
         font-size: 12px;
+    }
+    .lista__contatos, .titulo__contato_2{
+        margin-top: 20px;
+    }
+    .titulo__contato_1{
+        margin-top: 5px;
     }
 }
