@@ -19,9 +19,24 @@
     font-size: 3.0625rem;
     text-shadow: 0 4px 4px #000000bf;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 .banner--texto{
     font-size: 1.0625rem;
     text-shadow: 0 4px 4px #000000bf;
     color: #ffffff;
+}
+
+@media (max-width: 768px){
+    .banner--titulo{
+        font-size: 2.0625rem;
+    }
+    .banner--texto{
+        font-size: 0.8025rem;
+    }
+    .banner--img{
+        width: 100%;
+        height: calc(100vh - 250px);
+        display: block;
+    }
 }

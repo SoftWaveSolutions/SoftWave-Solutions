@@ -20,7 +20,7 @@
 }
 
 .lista__link__contatos:hover{
-    text-decoration: unde;
+    text-decoration: underline;
 }
 
 .lista__item__contatos {
@@ -38,4 +38,17 @@
 
 .texto__contato_2 {
     margin-bottom: 8px;
+}
+
+@media(max-width: 768px){
+    .container__contato{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto__contato_2, .titulo__contato_2, .titulo__contato_1, .lista__link__contatos, .texto__contato_1{
+        text-align: center;
+        font-size: 12px;
+    }
 }
