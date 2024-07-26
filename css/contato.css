@@ -50,11 +50,19 @@
     }
     .container__contato{
         font-size: 12px;
+        margin: 0 10px 0 10px;
     }
     .lista__contatos, .titulo__contato_2{
         margin-top: 20px;
     }
     .titulo__contato_1{
         margin-top: 5px;
+    }
+    .logo__contato {
+        width: 7rem;
+        height: 7rem;
+    }
+    .lista__link__contatos{
+        text-decoration: underline;
     }
 }

@@ -51,9 +51,15 @@
 
 /* Define estilos para dispositivos com largura máxima de 768px */
 @media (max-width: 768px) {
+    .lista__item {
+        font-size: 12px; /* Define o tamanho da fonte */
+        margin: 0 10px;
+    }
+}
+@media (max-width: 500px) {
     .container__cabecalho {
-        flex-direction: column; /* Organiza os itens em uma coluna */
-        align-items: flex-start; /* Alinha os itens ao início do contêiner */
+        flex-direction: row; /* Organiza os itens em uma coluna */
+        align-items: center; /* Alinha os itens ao início do contêiner */
         padding: 5px; /* Adiciona padding ao contêiner */
     }
 
@@ -64,13 +70,16 @@
     }
 
     .lista__item {
-        font-size: 18px; /* Define o tamanho da fonte */
-        margin: 10px 0; /* Adiciona margem vertical aos itens */
+        font-size: 12px; /* Define o tamanho da fonte */
+        margin: 5px 5px; /* Adiciona margem vertical aos itens */
         text-align: center; /* Centraliza o texto */
     }
 
     #logo {
         width: 5rem; /* Define a largura do logo */
         height: 5rem; /* Define a altura do logo */
+    }
+    .container__links{
+
     }
 }
