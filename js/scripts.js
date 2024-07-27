@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function () {
+    let slideIndex = 0; // Inicializa o índice do slide para começar do primeiro slide
+    const slides = document.querySelectorAll('.slide-item'); // Seleciona todos os elementos com a classe 'slide-item'
+
+    // Função para mostrar os slides
+    function showSlides() {
+        // Itera por todos os slides e define a exibição
+        slides.forEach((slide, index) => {
+            // Se o índice do slide for igual ao slideIndex atual, o slide será exibido
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+        // Incrementa o índice do slide, voltando para o primeiro slide se o final for alcançado
+        slideIndex = (slideIndex + 1) % slides.length;
+    }
+
+    showSlides(); // Chama a função para mostrar o primeiro slide
+    setInterval(showSlides, 5000); // Define um intervalo para trocar os slides a cada 3 segundos
+});
+
 function showMission() {
     document.getElementById('info').innerHTML = ` 
         

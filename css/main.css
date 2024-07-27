@@ -1,41 +1,82 @@
-.container__banner{
-    position: relative;
-    align-items: center;
+.slide {
+    position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do elemento */
 }
-.banner--img{
-    width: 100%;
-    height: calc(100vh - 200px);
-    display: block;
-}
-.container--texto{
-    text-align: center;
-    position: absolute;
-    top: 50%;
 
+/* Define uma classe para itens dentro de um slide */
+.slide-item {
+    display: none; /* Oculta o item por padrão */
+    position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
 }
-.banner--titulo{
-    width: 100%;
-    font-size: 3.0625rem;
-    text-shadow: 0 4px 4px #000000bf;
-    color: #ffffff;
+
+/* Define uma classe para banners */
+.banner {
+    padding-top: 5px; /* Adiciona um pequeno padding no topo */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 100vh;
+    max-height: 700px; /* Define a altura máxima */
+}
+
+/* Define uma classe para um contêiner de texto dentro de um banner */
+.container__texto {
+    position: absolute; /* Define a posição como absoluta em relação ao elemento pai */
+    top: 50%; /* Alinha o topo do contêiner ao meio verticalmente */
+    left: 50%; /* Alinha a esquerda do contêiner ao meio horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Define a cor do texto como branca */
+    background-color: rgba(0, 0, 0, 0.5); /* Define o fundo como preto com 50% de opacidade */
+    padding: 10px; /* Adiciona padding ao redor do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Define estilos para o título e o texto dentro do banner */
+.titulo__banner, .texto__banner {
+    margin: 0; /* Remove margens */
+}
+
+/* Define o tamanho da fonte para o título dentro do banner */
+.titulo__banner {
+    font-size: 48px; /* Define o tamanho da fonte como 48 pixels */
     margin-bottom: 10px;
 }
-.banner--texto{
-    font-size: 1.0625rem;
-    text-shadow: 0 4px 4px #000000bf;
-    color: #ffffff;
+
+/* Define o tamanho da fonte para o texto dentro do banner */
+.texto__banner {
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
 }
 
-@media (max-width: 768px){
-    .banner--img{
+/* Torna o primeiro item do slide visível */
+.slide-item:first-child {
+    display: block; /* Exibe o item */
+}
+@media (max-width: 1100px){
+    .banner {
+        padding-top: 5px;
         width: 100%;
-        height: calc(100vh - 550px);
-        display: block;
+        height: 100vh;
+        max-height: 350px;
     }
-    .banner--titulo{
-        font-size: 0.6rem;
+    .titulo__banner {
+        font-size: 24px;
+        margin-bottom: 10px;
     }
-    .banner--texto{
-        font-size: 0.8rem;
+    .texto__banner {
+        font-size: 10px;
+    }
+}
+@media (max-width: 425px){
+    .banner {
+        padding-top: 5px;
+        width: 100%;
+        height: 75vh;
+        max-height: 350px;
+    }
+    .titulo__banner {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .texto__banner {
+        font-size: 8px;
     }
 }
