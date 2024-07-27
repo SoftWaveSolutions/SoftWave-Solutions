@@ -1,0 +1,101 @@
+.container__servicos {
+    margin-top: 50px; /* Adiciona margem superior */
+    background-color: #d3d3d3; /* Define a cor de fundo */
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+/* Define uma classe para o contêiner de imagens na seção 'serviços' */
+.container__imagens__servicos {
+    display: grid; /* Utiliza grid layout */
+    grid-template-columns: 550px 550px 550px; /* Define três colunas de 550px cada */
+    gap: 40px; /* Define o espaço entre as colunas */
+    justify-content: center; /* Centraliza o grid horizontalmente */
+    margin-top: 50px; /* Adiciona margem superior */
+}
+
+/* Define estilos para o título dentro da seção 'serviços' */
+.titulo__servicos {
+    padding-top: 50px; /* Adiciona padding superior */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 40px; /* Define o tamanho da fonte */
+}
+
+/* Define estilos para o texto dentro da seção 'serviços' */
+.texto__servicos {
+    font-size: 18px; /* Define o tamanho da fonte */
+}
+
+/* Define estilos para textos adicionais dentro da seção 'serviços' */
+.texto__servicos__1 {
+    margin-top: 20px; /* Adiciona margem superior */
+    padding: 0 50px 20px 50px; /* Adiciona padding horizontal e inferior */
+    text-align: center; /* Centraliza o texto */
+    color: #777777; /* Define a cor do texto */
+}
+
+/* Define estilos para elementos específicos dentro da seção 'serviços' */
+.servicos__1 {
+    border: 1px solid white; /* Adiciona uma borda branca */
+    background-color: white; /* Define a cor de fundo */
+    border-radius: 20px;
+}
+
+/* Define estilos para as imagens dentro da seção 'serviços' */
+.imagem__servicos__1 {
+    width: 500px; /* Define a largura da imagem */
+    height: 250px; /* Define a altura da imagem */
+    margin-top: 50px; /* Adiciona margem superior */
+    padding-bottom: 50px; /* Adiciona padding inferior */
+}
+@media (max-width:768px) {
+    .container__imagens__servicos {
+        display: grid; /* Utiliza grid layout */
+        grid-template-columns: 50% 50%; /* Define três colunas de 550px cada */
+        gap: 15px; /* Define o espaço entre as colunas */
+        align-items: center;
+        justify-content: center; /* Centraliza o grid horizontalmente */
+        margin-top: 50px; /* Adiciona margem superior */
+    }
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    .imagem__servicos__1 {
+        width: 250px; /* Define a largura da imagem */
+        height: 150px; /* Define a altura da imagem */
+        margin-top: 50px; /* Adiciona margem superior */
+        padding-bottom: 50px; /* Adiciona padding inferior */
+    }
+    .texto__servicos {
+        font-size: 12px; /* Define o tamanho da fonte */
+    }
+    .texto__servicos__1 {
+        margin-top: 20px; /* Adiciona margem superior */
+        font-size: 12px;
+    }
+}
+@media (max-width:425px) {
+    .container__imagens__servicos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; /* Centraliza o grid horizontalmente */
+        margin-top: 50px; /* Adiciona margem superior */
+    }
+    .imagem__servicos__1 {
+        width: 250px; /* Define a largura da imagem */
+        height: 150px; /* Define a altura da imagem */
+        margin-top: 50px; /* Adiciona margem superior */
+        padding-bottom: 50px; /* Adiciona padding inferior */
+    }
+    .texto__servicos {
+        font-size: 12px; /* Define o tamanho da fonte */
+    }
+    .texto__servicos__1 {
+        margin-top: 20px; /* Adiciona margem superior */
+        font-size: 12px;
+    }
+}
