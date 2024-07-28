@@ -11,7 +11,6 @@
 
 /* Define uma classe para banners */
 .banner {
-    padding-top: 5px; /* Adiciona um pequeno padding no topo */
     width: 100%; /* Define a largura como 100% do elemento pai */
     height: 100vh;
     max-height: 700px; /* Define a altura máxima */
@@ -20,7 +19,7 @@
 /* Define uma classe para um contêiner de texto dentro de um banner */
 .container__texto {
     position: absolute; /* Define a posição como absoluta em relação ao elemento pai */
-    top: 50%; /* Alinha o topo do contêiner ao meio verticalmente */
+    top: 40%; /* Alinha o topo do contêiner ao meio verticalmente */
     left: 50%; /* Alinha a esquerda do contêiner ao meio horizontalmente */
     transform: translateX(-50%); /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto */

@@ -2,8 +2,9 @@
 .container__cabecalho {
     display: flex; /* Utiliza flexbox para organizar os itens em uma linha */
     justify-content: space-around; /* Distribui os itens igualmente ao longo do contêiner */
-    background-color: #d3d3d3; /* Define a cor de fundo */
+    background-color: #ffffff; /* Define a cor de fundo */
     align-items: center; /* Alinha verticalmente os itens ao centro */
+    border-radius: 10px;
 }
 
 /* Define o estilo para o elemento com o ID 'logo' */
@@ -16,7 +17,7 @@
 .lista__menu {
     list-style: none; /* Remove os marcadores de lista */
     display: flex; /* Exibe os itens em linha */
-    background-color: #00ade7; /* Define a cor de fundo */
+    background-color: #ffffff; /* Define a cor de fundo */
     border-radius: 5px; /* Adiciona bordas arredondadas */
     padding: 5px; /* Adiciona padding ao redor da lista */
 }
@@ -30,7 +31,7 @@
 /* Define uma classe para os links dentro dos itens da lista de menu */
 .lista__link {
     --s: 0.1em; /* Define a espessura da linha */
-    --c: #00FF94; /* Define a cor do efeito de hover */
+    --c: #00ade7; /* Define a cor do efeito de hover */
     text-decoration: none; /* Remove a decoração padrão do link */
     font-weight: bold; /* Define o texto como negrito */
     cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o link */
