@@ -43,6 +43,16 @@ function setAria() {
 btnMenu.addEventListener("click", handleButtonClick);
 btnMenu.addEventListener("touchstart", handleButtonClick);
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     let slideIndex = 0; // Inicializa o índice do slide para começar do primeiro slide
     const slides = document.querySelectorAll('.slide-item'); // Seleciona todos os elementos com a classe 'slide-item'
