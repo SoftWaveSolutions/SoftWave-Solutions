@@ -86,61 +86,65 @@
         width: 5rem; /* Define a largura do logo */
         height: 5rem; /* Define a altura do logo */
     }
-    .container__links{
+    .container__links {
         display: block;
         position: absolute;
-        top: 4.85rem;
+        top: 5rem;
         left: 0;
-        background: #ffffff;
         text-align: center;
         width: 100%;
         height: 0;
-        z-index: 100;
+        z-index: 1;
         visibility: hidden;
         overflow-y: hidden;
-        transition: 0,5s;
-    }
-    .btn-menu{
+        transition: 0.5s;
+        text-decoration: none;
+      }
+      .container__links a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+        text-decoration: none;
+      }
+      .btn-menu {
         background: none;
         border: none;
         display: flex;
         align-items: center;
         gap: 0.5rem;
         color: #000;
-        padding-block: 1rem;
+        padding: 1rem 0;
         cursor: pointer;
-    }
-    .hamburguer{
+      }
+      .hamburguer {
         border-top: 0.125rem solid;
         width: 1.25rem;
-    }
-    .hamburguer::before, .hamburguer::after{
+      }
+      .hamburguer::after,
+      .hamburguer::before {
         content: " ";
         display: block;
         width: 1.25rem;
         height: 0.125rem;
-        background: #000;
+        background: currentColor;
         margin-top: 0.3125rem;
         position: relative;
         transition: 0.3s;
-    }
-    .menu.active .container__links {
+      }
+      .menu.active .container__links {
         height: calc(100vh - 4.6875rem);
         visibility: visible;
         overflow-y: auto;
       }
-    .menu:focus-within ~ .container__links{
-        display: block;
-        height: calc(100vh- 4.6875rem);
-    }
-    .menu:focus-within .hamburguer{
+      .menu.active .hamburguer {
         border-top-color: transparent;
-    }
-    .menu:focus-within .hamburguer::before{
+      }
+      .menu.active .hamburguer::before {
         transform: rotate(135deg);
-    }
-    .menu:focus-within .hamburguer::after{
+      }
+      .menu.active .hamburguer::after {
         transform: rotate(-135deg);
         top: -0.4375rem;
-    }
+      }
 }
