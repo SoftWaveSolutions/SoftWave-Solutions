@@ -83,11 +83,13 @@
     color: #00FF94;
     font-size: 1.4em;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 
 .contact-info-content p {
     color: #FFF;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .contact-form-section {
