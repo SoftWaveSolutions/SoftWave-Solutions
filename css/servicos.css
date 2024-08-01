@@ -60,130 +60,306 @@
 .botao-servicos:hover{
     background-color: #00FF94;
 }
-@media (max-width:1700px){
+
+@media (max-width: 1700px){
     .container__imagens__servicos {
         display: grid; /* Utiliza grid layout */
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 350px 350px; /* Define três colunas de 400px cada */
         gap: 40px; /* Define o espaço entre as colunas */
-        justify-content: center; /* Centraliza o grid horizontalmente */
-        align-items: center;
+        justify-content: center;
         margin-top: 50px; /* Adiciona margem superior */
+        text-align: center;
     }
-    .imagem__servicos__1 {
-        width: 500px; /* Define a largura da imagem */
-        height: 250px; /* Define a altura da imagem */
-        margin-top: 50px; /* Adiciona margem superior */
-        padding-bottom: 50px; /* Adiciona padding inferior */
-    }
-    .container__imagens__servicos .servicos__1:nth-child(2){
-        padding: 15px 0;
-    }
-    .container__imagens__servicos .servicos__1:nth-child(4){
-        padding: 30px 0;
-    }
-    .container__imagens__servicos .servicos__1:nth-child(6){
-        padding: 8px 0;
-    }
-}
-@media (max-width:1100px){
+    
+    /* Define estilos para o título dentro da seção 'serviços' */
     .titulo__servicos {
         padding-top: 50px; /* Adiciona padding superior */
         margin-bottom: 20px; /* Adiciona margem inferior */
-        font-size: 22px; /* Define o tamanho da fonte */
+        font-size: 40px; /* Define o tamanho da fonte */
     }
     
     /* Define estilos para o texto dentro da seção 'serviços' */
     .texto__servicos {
-        font-size: 12px; /* Define o tamanho da fonte */
-    }
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 450px;
-        gap: 40px; /* Define o espaço entre as colunas */
-        justify-content: center; /* Centraliza o grid horizontalmente */
-        align-items: center;
-        margin-top: 50px; /* Adiciona margem superior */
-    }
-    .imagem__servicos__1 {
-        width: 350px; /* Define a largura da imagem */
-        height: 250px; /* Define a altura da imagem */
-        margin-top: 50px; /* Adiciona margem superior */
-        padding-bottom: 50px; /* Adiciona padding inferior */
-    }
-    .texto__servicos__1 {
-        font-size: 12px;
-        margin-top: 20px; /* Adiciona margem superior */
-        padding: 0 25px 10px 25px; /* Adiciona padding horizontal e inferior */
-        text-align: center; /* Centraliza o texto */
-        color: #777777; /* Define a cor do texto */
-    }
-}
-@media (max-width:768px){
-    .titulo__servicos {
-        padding-top: 50px; /* Adiciona padding superior */
-        margin-bottom: 20px; /* Adiciona margem inferior */
-        font-size: 22px; /* Define o tamanho da fonte */
-    }
-    
-    /* Define estilos para o texto dentro da seção 'serviços' */
-    .texto__servicos {
-        font-size: 12px; /* Define o tamanho da fonte */
-    }
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 450px;
-        gap: 20px; /* Define o espaço entre as colunas */
-        justify-content: center; /* Centraliza o grid horizontalmente */
-        align-items: center;
-        margin-top: 50px; /* Adiciona margem superior */
-    }
-    .imagem__servicos__1 {
-        width: 350px; /* Define a largura da imagem */
-        height: 250px; /* Define a altura da imagem */
-        margin-top: 50px; /* Adiciona margem superior */
-        padding-bottom: 50px; /* Adiciona padding inferior */
-    }
-    .texto__servicos__1 {
-        font-size: 12px;
-        margin-top: 20px; /* Adiciona margem superior */
-        padding: 0 50px 20px 50px; /* Adiciona padding horizontal e inferior */
-        text-align: center; /* Centraliza o texto */
-        color: #777777; /* Define a cor do texto */
-    }
-}
-@media (max-width:425px){
-    .titulo__servicos {
-        padding-top: 50px; /* Adiciona padding superior */
-        margin-bottom: 20px; /* Adiciona margem inferior */
         font-size: 18px; /* Define o tamanho da fonte */
     }
+    .titulo__servicos {
+        font-size: 18px;
+        text-align: center;
+    }
+    .titulo__servicos__1 {
+        margin-bottom: 10px;
+    }
+    /* Define estilos para textos adicionais dentro da seção 'serviços' */
+    .texto__servicos__1 {
+        color: #777777; /* Define a cor do texto */
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    /* Define estilos para elementos específicos dentro da seção 'serviços' */
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    
+    /* Define estilos para as imagens dentro da seção 'serviços' */
+    .imagem__servicos__1 {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .botao-servicos{
+        background-color: #00ade7;
+        border-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .botao-servicos:hover{
+        background-color: #00FF94;
+    }
+}
+
+@media (max-width: 740px){
+    .container__imagens__servicos {
+        display: grid; /* Utiliza grid layout */
+        grid-template-columns: 300px 300px; /* Define três colunas de 400px cada */
+        gap: 20px; /* Define o espaço entre as colunas */
+        justify-content: center;
+        margin-top: 50px; /* Adiciona margem superior */
+        text-align: center;
+    }
+    
+    /* Define estilos para o título dentro da seção 'serviços' */
+    .titulo__servicos {
+        padding-top: 50px; /* Adiciona padding superior */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        font-size: 40px; /* Define o tamanho da fonte */
+    }
     
     /* Define estilos para o texto dentro da seção 'serviços' */
     .texto__servicos {
-        font-size: 10px; /* Define o tamanho da fonte */
+        font-size: 12px; /* Define o tamanho da fonte */
     }
+    .titulo__servicos {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titulo__servicos__1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /* Define estilos para textos adicionais dentro da seção 'serviços' */
+    .texto__servicos__1 {
+        color: #777777; /* Define a cor do texto */
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Define estilos para elementos específicos dentro da seção 'serviços' */
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    
+    /* Define estilos para as imagens dentro da seção 'serviços' */
+    .imagem__servicos__1 {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .botao-servicos{
+        font-size: 10px;
+        background-color: #00ade7;
+        border-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .botao-servicos:hover{
+        background-color: #00FF94;
+    }
+}
+
+@media (max-width: 620px){
     .container__imagens__servicos {
         display: grid; /* Utiliza grid layout */
-        grid-template-columns: 300px;
+        grid-template-columns: 250px 250px; /* Define três colunas de 400px cada */
         gap: 20px; /* Define o espaço entre as colunas */
-        justify-content: center; /* Centraliza o grid horizontalmente */
-        align-items: center;
+        justify-content: center;
         margin-top: 50px; /* Adiciona margem superior */
+        text-align: center;
     }
-    .imagem__servicos__1 {
-        width: 300px; /* Define a largura da imagem */
-        height: 250px; /* Define a altura da imagem */
-        margin-top: 50px; /* Adiciona margem superior */
-        padding-bottom: 50px; /* Adiciona padding inferior */
+    
+    /* Define estilos para o título dentro da seção 'serviços' */
+    .titulo__servicos {
+        padding-top: 50px; /* Adiciona padding superior */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        font-size: 40px; /* Define o tamanho da fonte */
     }
-    .titulo__servicos__1{
+    
+    /* Define estilos para o texto dentro da seção 'serviços' */
+    .texto__servicos {
+        font-size: 12px; /* Define o tamanho da fonte */
+    }
+    .titulo__servicos {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titulo__servicos__1 {
         font-size: 14px;
+        margin-bottom: 10px;
     }
+    /* Define estilos para textos adicionais dentro da seção 'serviços' */
     .texto__servicos__1 {
-        font-size: 10px;
-        margin-top: 20px; /* Adiciona margem superior */
-        padding: 0 50px 20px 50px; /* Adiciona padding horizontal e inferior */
-        text-align: center; /* Centraliza o texto */
         color: #777777; /* Define a cor do texto */
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Define estilos para elementos específicos dentro da seção 'serviços' */
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    
+    /* Define estilos para as imagens dentro da seção 'serviços' */
+    .imagem__servicos__1 {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .botao-servicos{
+        font-size: 10px;
+        background-color: #00ade7;
+        border-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .botao-servicos:hover{
+        background-color: #00FF94;
+    }
+}
+
+@media (max-width: 460px){
+    .container__imagens__servicos {
+        display: grid; /* Utiliza grid layout */
+        grid-template-columns: 350px; /* Define três colunas de 400px cada */
+        gap: 20px; /* Define o espaço entre as colunas */
+        justify-content: center;
+        margin-top: 50px; /* Adiciona margem superior */
+        text-align: center;
+    }
+    
+    /* Define estilos para o título dentro da seção 'serviços' */
+    .titulo__servicos {
+        padding-top: 50px; /* Adiciona padding superior */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        font-size: 40px; /* Define o tamanho da fonte */
+    }
+    
+    /* Define estilos para o texto dentro da seção 'serviços' */
+    .texto__servicos {
+        font-size: 12px; /* Define o tamanho da fonte */
+    }
+    .titulo__servicos {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titulo__servicos__1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /* Define estilos para textos adicionais dentro da seção 'serviços' */
+    .texto__servicos__1 {
+        color: #777777; /* Define a cor do texto */
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Define estilos para elementos específicos dentro da seção 'serviços' */
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    
+    /* Define estilos para as imagens dentro da seção 'serviços' */
+    .imagem__servicos__1 {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .botao-servicos{
+        font-size: 10px;
+        background-color: #00ade7;
+        border-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .botao-servicos:hover{
+        background-color: #00FF94;
+    }
+}
+
+@media (max-width: 320px){
+    .container__imagens__servicos {
+        display: grid; /* Utiliza grid layout */
+        grid-template-columns: 300px; /* Define três colunas de 400px cada */
+        gap: 20px; /* Define o espaço entre as colunas */
+        justify-content: center;
+        margin-top: 50px; /* Adiciona margem superior */
+        text-align: center;
+    }
+    
+    /* Define estilos para o título dentro da seção 'serviços' */
+    .titulo__servicos {
+        padding-top: 50px; /* Adiciona padding superior */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        font-size: 40px; /* Define o tamanho da fonte */
+    }
+    
+    /* Define estilos para o texto dentro da seção 'serviços' */
+    .texto__servicos {
+        font-size: 12px; /* Define o tamanho da fonte */
+    }
+    .titulo__servicos {
+        font-size: 16px;
+        text-align: center;
+    }
+    .titulo__servicos__1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /* Define estilos para textos adicionais dentro da seção 'serviços' */
+    .texto__servicos__1 {
+        color: #777777; /* Define a cor do texto */
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Define estilos para elementos específicos dentro da seção 'serviços' */
+    .servicos__1 {
+        border: 1px solid white; /* Adiciona uma borda branca */
+        background-color: white; /* Define a cor de fundo */
+        border-radius: 20px;
+    }
+    
+    /* Define estilos para as imagens dentro da seção 'serviços' */
+    .imagem__servicos__1 {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .botao-servicos{
+        font-size: 10px;
+        background-color: #00ade7;
+        border-color: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .botao-servicos:hover{
+        background-color: #00FF94;
     }
 }
