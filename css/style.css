@@ -19,6 +19,10 @@ body{
 :root{
     --cor-principal:#00ade7;
     --cor-secundaria: #00FF94;
+    --azul: #007BFF;
+    --cinza-bordas: #ccc;
+    --cinza-container: #d3d3d3;
+    --preto-opaco: #00000080;
 }
 
 html,
