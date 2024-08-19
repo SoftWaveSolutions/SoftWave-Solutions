@@ -17,17 +17,15 @@
 .titulo__servicos {
     padding-top: 50px; /* Adiciona padding superior */
     margin-bottom: 20px; /* Adiciona margem inferior */
-    font-size: 40px; /* Define o tamanho da fonte */
+    font-size: 36px; /* Define o tamanho da fonte */
+    text-align: center;
 }
 
 /* Define estilos para o texto dentro da seção 'serviços' */
 .texto__servicos {
     font-size: 18px; /* Define o tamanho da fonte */
 }
-.titulo__servicos {
-    font-size: 18px;
-    text-align: center;
-}
+
 .titulo__servicos__1 {
     margin-bottom: 10px;
 }
