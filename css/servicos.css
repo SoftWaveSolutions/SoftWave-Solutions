@@ -367,3 +367,18 @@
         background-color: #00FF94;
     }
 }
+
+
+.swiper{
+    display: flex;
+    align-items: center;
+  }
+  
+  .swiper-wrapper{
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  
+  .swiper-slide img {
+    width: 400px;
+  }

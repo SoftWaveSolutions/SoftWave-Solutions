@@ -53,6 +53,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+/*
 document.addEventListener('DOMContentLoaded', function () {
     let slideIndex = 0; // Inicializa o índice do slide para começar do primeiro slide
     const slides = document.querySelectorAll('.slide-item'); // Seleciona todos os elementos com a classe 'slide-item'
@@ -70,6 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlides(); // Chama a função para mostrar o primeiro slide
     setInterval(showSlides, 5000); // Define um intervalo para trocar os slides a cada 3 segundos
+});
+*/
+
+var swiper = new Swiper(".mySwiper", {
+  
 });
 
 function showMission() {
@@ -95,5 +102,36 @@ function showValues() {
             </Ul>
         </div>
     `;
-}
+};
 
+
+
+			const swiper = new Swiper(".swiper", {
+				spaceBetween: 1,
+				slidesPerView: 3,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					type: "bullets",
+				},
+				breakpoints: {
+					// when window width is >= 320px
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					// when window width is >= 480px
+					480: {
+						slidesPerView: 2,
+						spaceBetween: 30,
+					},
+					// when window width is >= 640px
+					640: {
+						slidesPerView: 3,
+						spaceBetween: 40,
+					},
+				},
+			});
