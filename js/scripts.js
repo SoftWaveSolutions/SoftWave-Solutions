@@ -53,6 +53,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+/*
 document.addEventListener('DOMContentLoaded', function () {
     let slideIndex = 0; // Inicializa o índice do slide para começar do primeiro slide
     const slides = document.querySelectorAll('.slide-item'); // Seleciona todos os elementos com a classe 'slide-item'
@@ -70,6 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlides(); // Chama a função para mostrar o primeiro slide
     setInterval(showSlides, 5000); // Define um intervalo para trocar os slides a cada 3 segundos
+});
+*/
+
+var swiperbanner = new Swiper(".mySwiper", {
+  
 });
 
 function showMission() {
@@ -110,6 +117,7 @@ function showValues() {
 					el: ".swiper-pagination",
 					type: "bullets",
 				},
+        loop: true, // Habilita o loop
 				breakpoints: {
 					// when window width is >= 320px
 					320: {
@@ -128,3 +136,4 @@ function showValues() {
 					},
 				},
 			});
+
