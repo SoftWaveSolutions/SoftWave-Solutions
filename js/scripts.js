@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 */
 
-var swiper = new Swiper(".mySwiper", {
+var swiperbanner = new Swiper(".mySwiper", {
   
 });
 
@@ -117,6 +117,7 @@ function showValues() {
 					el: ".swiper-pagination",
 					type: "bullets",
 				},
+        loop: true, // Habilita o loop
 				breakpoints: {
 					// when window width is >= 320px
 					320: {

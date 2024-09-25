@@ -1,10 +1,10 @@
-.swiper-wrapper {
+.slide {
     position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
     overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do elemento */
 }
 
 /* Define uma classe para itens dentro de um slide */
-.swiper-slide {
+.slide-item {
     display: none; /* Oculta o item por padrão */
     position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
 }
@@ -46,7 +46,7 @@
 }
 
 /* Torna o primeiro item do slide visível */
-.swiper-slide:first-child {
+.slide-item:first-child {
     display: block; /* Exibe o item */
 }
 @media (max-width: 1100px){

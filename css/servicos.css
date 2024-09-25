@@ -65,6 +65,10 @@
     text-decoration: none;
 }
 
+.swiper{
+    margin-top: 50px;
+}
+
 @media (max-width: 1700px){
     .container__imagens__servicos {
         display: grid; /* Utiliza grid layout */
