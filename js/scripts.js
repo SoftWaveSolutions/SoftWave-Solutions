@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 */
 
-var swiperbanner = new Swiper(".mySwiper", {
+var swiper2 = new Swiper(".mySwiper", {
   
 });
 
@@ -106,7 +106,7 @@ function showValues() {
 
 
 
-			const swiper = new Swiper(".swiper", {
+			const swiper1 = new Swiper(".swiper1", {
 				spaceBetween: 1,
 				slidesPerView: 3,
 				navigation: {
@@ -126,12 +126,12 @@ function showValues() {
 					},
 					// when window width is >= 480px
 					480: {
-						slidesPerView: 2,
+						slidesPerView: 1,
 						spaceBetween: 30,
 					},
 					// when window width is >= 640px
 					640: {
-						slidesPerView: 3,
+						slidesPerView: 2,
 						spaceBetween: 40,
 					},
 				},

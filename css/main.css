@@ -11,9 +11,10 @@
 
 /* Define uma classe para banners */
 .banner {
-    width: 100%; /* Define a largura como 100% do elemento pai */
-    height: 100vh;
-    max-height: 700px; /* Define a altura máxima */
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Define uma classe para um contêiner de texto dentro de um banner */
