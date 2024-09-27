@@ -75,8 +75,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 */
 
-var swiper2 = new Swiper(".mySwiper", {
-  
+const swiper2 = new Swiper(".swiper2", {
+  loop: true,
+  autoplay: {
+    delay: 3000, // Tempo entre slides (em ms)
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination-banner',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next-banner',
+    prevEl: '.swiper-button-prev-banner',
+  },
 });
 
 function showMission() {
@@ -110,11 +122,11 @@ function showValues() {
 				spaceBetween: 1,
 				slidesPerView: 3,
 				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
+					nextEl: ".swiper-button-next-1",
+					prevEl: ".swiper-button-prev-1",
 				},
 				pagination: {
-					el: ".swiper-pagination",
+					el: ".swiper-pagination-1",
 					type: "bullets",
 				},
         loop: true, // Habilita o loop

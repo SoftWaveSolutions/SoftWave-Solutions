@@ -1,10 +1,10 @@
-.slide {
+.mySwiper {
     position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
     overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do elemento */
 }
 
 /* Define uma classe para itens dentro de um slide */
-.slide-item {
+.swiper-slide2 {
     display: none; /* Oculta o item por padrão */
     position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
 }
@@ -47,9 +47,24 @@
 }
 
 /* Torna o primeiro item do slide visível */
-.slide-item:first-child {
+.swiper-slide2:first-child {
     display: block; /* Exibe o item */
 }
+
+.mySwiper .swiper-button-next, 
+.mySwiper .swiper-button-prev, 
+.mySwiper .swiper-pagination {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev,
+.mySwiper:hover .swiper-pagination {
+  opacity: 1;
+}
+
+
 @media (max-width: 1100px){
     .banner {
         padding-top: 5px;

@@ -15,10 +15,8 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 		<link
 			rel="stylesheet"
 			href="css/style.css"
@@ -133,12 +131,16 @@
 		</header>
 		<main>
 			<section class="container__banner">
-				<div class="swiper2 mySwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/14815_01-09-2023_274000694.jpg" alt="" class="banner"></div>
-						<div class="swiper-slide"><img src="img/27137626448999694ab31e41306a49fb.jpg" alt="" class="banner"></div>
-						<div class="swiper-slide"><img src="img/fb473721-40a9-4edb-a390-e760d73713a3.jpg" alt="" class="banner"></div>
-				</div>
+          <div class="swiper2 mySwiper">
+            <div class="swiper-wrapper2">
+              <div class="swiper-slide2"><img src="img/14815_01-09-2023_274000694.jpg" alt="Slide 1" class="banner"></div>
+              <div class="swiper-slide2"><img src="img/27137626448999694ab31e41306a49fb.jpg" alt="Slide 2" class="banner"></div>
+              <div class="swiper-slide2"><img src="img/fb473721-40a9-4edb-a390-e760d73713a3.jpg" alt="Slide 3" class="banner"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-banner"></div>
+            <div class="swiper-button-next swiper-button-next-banner"></div>
+            <div class="swiper-button-prev swiper-button-prev-banner"></div>
+          </div>
 			</section>
 			<section id="section1">
 				<nav class="container__sobre">
@@ -313,8 +315,9 @@
 						</div>
 					</div>
 					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+          <div class="swiper-pagination swiper-pagination-1"></div>
+          <div class="swiper-button-next swiper-button-next-1"></div>
+          <div class="swiper-button-prev swiper-button-prev-1"></div>
 				</div>
 			</section>
 			<section class="container__projetos"></section>
@@ -409,5 +412,11 @@
 		<script src="js/scripts.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module">
+      import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.14/+esm'
+    </script>
+
 	</body>
 </html>
