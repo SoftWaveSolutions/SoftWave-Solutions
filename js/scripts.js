@@ -76,19 +76,36 @@ document.addEventListener('DOMContentLoaded', function () {
 */
 
 const swiper2 = new Swiper(".swiper2", {
-  loop: true,
+  loop: true, // Ativa o loop
   autoplay: {
-    delay: 3000, // Tempo entre slides (em ms)
-    disableOnInteraction: false,
+    delay: 10000, // Intervalo de 10 segundos entre os slides
+    disableOnInteraction: false, // Continua após interação do usuário
   },
   pagination: {
-    el: '.swiper-pagination-banner',
-    clickable: true,
+    el: '.swiper-pagination-banner', // Pega a paginação correta
+    clickable: true, // Paginacao clicável
   },
   navigation: {
-    nextEl: '.swiper-button-next-banner',
-    prevEl: '.swiper-button-prev-banner',
+    nextEl: '.swiper-button-next-banner', // Botão "próximo" específico
+    prevEl: '.swiper-button-prev-banner', // Botão "anterior" específico
   },
+});
+document.addEventListener("DOMContentLoaded", function() {
+  var bannerSwiper = new Swiper('.banner-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination-banner',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-banner',
+      prevEl: '.swiper-button-prev-banner',
+    },
+  });
 });
 
 function showMission() {

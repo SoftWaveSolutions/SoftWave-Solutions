@@ -72,12 +72,12 @@
     margin-top: 50px;
   }
   
-  .swiper-wrapper{
+  .swiper1 .swiper-wrapper{
     text-align: center;
     margin: 10px 0 10px 0;
   }
   
-  .swiper-slide img {
+  .swiper1 img {
     width: 400px;
   }
 

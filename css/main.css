@@ -1,19 +1,13 @@
-.mySwiper {
+.banner-swiper {
     position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
     overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do elemento */
-}
-
-/* Define uma classe para itens dentro de um slide */
-.swiper-slide2 {
-    display: none; /* Oculta o item por padrão */
-    position: relative; /* Define a posição como relativa em relação ao seu elemento pai */
 }
 
 /* Define uma classe para banners */
 .banner {
 
     width: 100%;
-    height: 100%;
+    height: 550px;
     object-fit: cover;
 }
 
@@ -46,21 +40,16 @@
     font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
 }
 
-/* Torna o primeiro item do slide visível */
-.swiper-slide2:first-child {
-    display: block; /* Exibe o item */
-}
-
-.mySwiper .swiper-button-next, 
-.mySwiper .swiper-button-prev, 
-.mySwiper .swiper-pagination {
+.banner-swiper .swiper-button-next, 
+.banner-swiper .swiper-button-prev, 
+.banner-swiper .swiper-pagination {
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-.mySwiper:hover .swiper-button-next,
-.mySwiper:hover .swiper-button-prev,
-.mySwiper:hover .swiper-pagination {
+.banner-swiper:hover .swiper-button-next,
+.banner-swiper:hover .swiper-button-prev,
+.banner-swiper:hover .swiper-pagination {
   opacity: 1;
 }
 
