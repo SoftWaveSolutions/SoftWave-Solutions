@@ -1,16 +1,8 @@
 .container__servicos {
     padding-bottom: 60px;
     background-color: #d3d3d3; /* Define a cor de fundo */
-}
-
-/* Define uma classe para o contêiner de imagens na seção 'serviços' */
-.container__imagens__servicos {
-    display: grid; /* Utiliza grid layout */
-    grid-template-columns: 450px 450px 450px; /* Define três colunas de 400px cada */
-    gap: 80px; /* Define o espaço entre as colunas */
-    justify-content: center;
-    margin-top: 50px; /* Adiciona margem superior */
-    text-align: center;
+    max-width: 100vw; /* Garante que o slide não exceda a largura da tela */
+    overflow-x: hidden;
 }
 
 /* Define estilos para o título dentro da seção 'serviços' */
@@ -36,13 +28,6 @@
     margin-bottom: 10px;
 }
 
-/* Define estilos para elementos específicos dentro da seção 'serviços' */
-.servicos__1 {
-    border: 1px solid white; /* Adiciona uma borda branca */
-    background-color: white; /* Define a cor de fundo */
-    border-radius: 20px;
-}
-
 /* Define estilos para as imagens dentro da seção 'serviços' */
 .imagem__servicos__1 {
     height: 200px;
@@ -65,19 +50,36 @@
     text-decoration: none;
 }
 
-.swiper{
+.swiper1{
+    display: flex;
+    align-items: center;
+    position: relative;
     margin-top: 50px;
+  }
+  
+  .swiper1 .swiper-wrapper{
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  
+  .swiper1 img {
+    width: 400px;
+  }
+
+.swiper1 .swiper-button-next, 
+.swiper1 .swiper-button-prev, 
+.swiper1 .swiper-pagination {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.swiper1:hover .swiper-button-next,
+.swiper1:hover .swiper-button-prev,
+.swiper1:hover .swiper-pagination {
+  opacity: 1;
 }
 
 @media (max-width: 1700px){
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 350px 350px; /* Define três colunas de 400px cada */
-        gap: 40px; /* Define o espaço entre as colunas */
-        justify-content: center;
-        margin-top: 50px; /* Adiciona margem superior */
-        text-align: center;
-    }
     
     /* Define estilos para o título dentro da seção 'serviços' */
     .titulo__servicos {
@@ -129,14 +131,6 @@
 }
 
 @media (max-width: 740px){
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 300px 300px; /* Define três colunas de 400px cada */
-        gap: 20px; /* Define o espaço entre as colunas */
-        justify-content: center;
-        margin-top: 50px; /* Adiciona margem superior */
-        text-align: center;
-    }
     
     /* Define estilos para o título dentro da seção 'serviços' */
     .titulo__servicos {
@@ -251,15 +245,6 @@
 }
 
 @media (max-width: 460px){
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 350px; /* Define três colunas de 400px cada */
-        gap: 20px; /* Define o espaço entre as colunas */
-        justify-content: center;
-        margin-top: 50px; /* Adiciona margem superior */
-        text-align: center;
-    }
-    
     /* Define estilos para o título dentro da seção 'serviços' */
     .titulo__servicos {
         padding-top: 50px; /* Adiciona padding superior */
@@ -312,15 +297,6 @@
 }
 
 @media (max-width: 320px){
-    .container__imagens__servicos {
-        display: grid; /* Utiliza grid layout */
-        grid-template-columns: 300px; /* Define três colunas de 400px cada */
-        gap: 20px; /* Define o espaço entre as colunas */
-        justify-content: center;
-        margin-top: 50px; /* Adiciona margem superior */
-        text-align: center;
-    }
-    
     /* Define estilos para o título dentro da seção 'serviços' */
     .titulo__servicos {
         padding-top: 50px; /* Adiciona padding superior */
@@ -373,16 +349,3 @@
 }
 
 
-.swiper1{
-    display: flex;
-    align-items: center;
-  }
-  
-  .swiper-wrapper{
-    text-align: center;
-    margin: 10px 0 10px 0;
-  }
-  
-  .swiper-slide img {
-    width: 400px;
-  }
