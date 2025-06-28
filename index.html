@@ -190,6 +190,16 @@
         </section>
         <p>&copy; 2023 SoftWave Solutions. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        const hash = window.location.hash;
+        if (
+            hash.includes("invite_token") ||
+            hash.includes("confirmation_token") ||
+            hash.includes("recovery_token")
+        ) {
+            window.location.href = "/admin/" + hash;
+        }
+    </script>
 </body>
 <script src="../JS/script.js"></script>
 </html>
