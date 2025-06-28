@@ -3,19 +3,19 @@ layout: layout.njk
 title: Blog da SoftWave
 ---
 
-<h1>{{ title }}</h1>
+<h1 class="titulo-blog">Blog da SoftWave</h1>
 
-<ul>
+<div class="blog-container">
   {% for post in collections.posts reversed %}
-    <li style="margin-bottom: 2rem;">
+    <div class="post-card">
       <a href="{{ post.url }}">
+        {% if post.data.thumbnail %}
+          <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" />
+        {% endif %}
         <h2>{{ post.data.title }}</h2>
       </a>
-      <small>{{ post.date | date("dd/MM/yyyy") }}</small><br>
-      {% if post.data.thumbnail %}
-        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" style="max-width: 300px;">
-      {% endif %}
+      <small>{{ post.date | date("dd/MM/yyyy") }}</small>
       <p><a href="{{ post.url }}">Leia mais →</a></p>
-    </li>
+    </div>
   {% endfor %}
-</ul>
+</div>
