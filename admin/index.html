@@ -21,6 +21,11 @@
   <body>
     <div id="nc-root"></div>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      if (window.location.hash.includes("invite_token")) {
+        window.location.href = "/admin/" + window.location.hash;
+      }
+    </script>
   </body>
 
 </html>
