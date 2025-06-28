@@ -48,6 +48,17 @@ footer .fab:hover {
   font-size: 2rem;
 }
 
+footer .fa-solid{
+  font-size: 1.5rem;
+  color: var(--secundary-color);
+  margin-bottom: 1rem;
+}
+
+footer .fa-solid:hover{
+  color: #0f9e8c;
+  font-size: 2rem;
+}
+
 footer p{
   text-align: center;
   color: #fff;
