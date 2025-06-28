@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>Admin - SoftWave Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin - SoftWave</title>
   </head>
   <body>
-    <div id="nc-root"></div>
     <script>
-      // Corrige convite por token que cai na home
-      if (window.location.hash.includes("invite_token")) {
-        window.location.href = "/admin/" + window.location.hash;
+      if (
+        window.location.hash.includes("invite_token") ||
+        window.location.hash.includes("confirmation_token") ||
+        window.location.hash.includes("recovery_token")
+      ) {
+        const hash = window.location.hash;
+        if (!window.location.pathname.includes("/admin/")) {
+          window.location.href = "/admin/" + hash;
+        }
       }
     </script>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
