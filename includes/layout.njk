@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <main>
+    <article>
+      <h1>{{ title }}</h1>
+      <p><small>{{ date | date("dd/MM/yyyy") }}</small></p>
+      {% if thumbnail %}
+        <img src="{{ thumbnail }}" alt="{{ title }}">
+      {% endif %}
+      <div>{{ content | safe }}</div>
+    </article>
+  </main>
+</body>
+</html>

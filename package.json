@@ -1,0 +1,23 @@
+{
+  "name": "softwave-solutions",
+  "version": "1.0.0",
+  "description": "Este é um site criado para a empresa SoftWave Solutions. Empresa de técnologia focada em serviços de desenvolvimento de websites e apps, reparo e manutenção de equipamentos eletrônicos e cibersegurança.\r A empresa ainda está em construção mas já com alguns projetos em andamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftWaveSolutions/SoftWave-Solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoftWaveSolutions/SoftWave-Solutions/issues"
+  },
+  "homepage": "https://github.com/SoftWaveSolutions/SoftWave-Solutions#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
