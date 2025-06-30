@@ -5,18 +5,8 @@
     <title>Admin - SoftWave</title>
   </head>
   <body>
-    <script>
-      if (
-        window.location.hash.includes("invite_token") ||
-        window.location.hash.includes("confirmation_token") ||
-        window.location.hash.includes("recovery_token")
-      ) {
-        const hash = window.location.hash;
-        if (!window.location.pathname.includes("/admin/")) {
-          window.location.href = "/admin/" + hash;
-        }
-      }
-    </script>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="admin.js"></script>
   </body>
 </html>
