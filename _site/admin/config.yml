@@ -1,20 +1,20 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # ou "master", dependendo do nome da sua branch
 
-media_folder: "img/uploads"
-public_folder: "/img/uploads"
+media_folder: "IMG/posts" # onde as imagens vão ficar no repositório
+public_folder: "/IMG/posts" # onde as imagens são acessadas no site
+auth_endpoint: api/auth/
+
 
 collections:
   - name: "posts"
-    label: "Postagens"
+    label: "Publicações"
     folder: "posts"
     create: true
     slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Imagem de capa", name: "thumbnail", widget: "image" }
-      - { label: "Corpo", name: "body", widget: "markdown" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

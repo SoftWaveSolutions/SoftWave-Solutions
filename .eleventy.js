@@ -13,3 +13,7 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk"
   };
 };
+
+eleventyConfig.addCollection("posts", function(collectionApi) {
+  return collectionApi.getFilteredByGlob("src/posts/*.md").reverse();
+});
