@@ -4,6 +4,8 @@ backend:
 
 media_folder: "IMG/posts" # onde as imagens vão ficar no repositório
 public_folder: "/IMG/posts" # onde as imagens são acessadas no site
+auth_endpoint: api/auth/
+
 
 collections:
   - name: "posts"
