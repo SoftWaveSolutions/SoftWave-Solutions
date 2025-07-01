@@ -1,0 +1,41 @@
+---
+title: {{ title }}
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - SoftWave Blog</title>
+
+    <link rel="icon" href="/img/Logo SoftWave.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    {% include "header.njk" %}
+
+    <main class="blog-post-container">
+      <article class="blog-post">
+        <img src="{{ thumbnail }}" alt="Capa da postagem" class="post-thumbnail" />
+        <h1 class="post-title">{{ title }}</h1>
+        <p class="post-date">{{ date | date("DD/MM/YYYY") }}</p>
+        <div class="post-body">
+          {{ content | safe }}
+        </div>
+      </article>
+    </main>
+
+    {% include "footer.njk" %}
+  </body>
+</html>
