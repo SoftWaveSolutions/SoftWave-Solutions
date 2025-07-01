@@ -1,0 +1,43 @@
+---
+layout: layout.njk
+title: Soft Blog
+permalink: "blog/index.html"
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Official Site SoftWave Solutions. Hire our services for web development, mobile applications, and digital marketing.">
+    <meta name="keywords" content="web development, mobile applications, digital marketing, SoftWave Solutions">
+    <meta name="author" content="Softwave Solutions">
+    <meta property="og:description" content="A SoftWave pode te ajudar com a maior variedade de serviços tecnológicos.">
+    <meta property="og:url" content="https://softwavesl.com.br">
+    <meta property="og:title" content="SoftWave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="../IMG/Logo SoftWave.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/blog.css">
+    <title>SoftWave - Soft Blog</title>
+
+
+
+<h1 class="blog-title">SoftWave Blog</h1>
+
+<section class="blog-grid">
+  {% for post in collections.posts %}
+    <a href="{{ post.url }}" class="card-post">
+      <img src="{{ post.data.thumbnail }}" alt="Imagem do post" />
+      <div class="card-content">
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.templateContent | striptags | truncate(100, true, '...') }}</p>
+        <span class="read-more">Ler mais</span>
+      </div>
+    </a>
+  {% endfor %}
+</section>
