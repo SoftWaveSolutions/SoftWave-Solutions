@@ -13,6 +13,8 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    path: "{{slug}}/index"  # <-- importante!
+    preview_path: "blog/{{slug}}"  # <-- para preview no CMS
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
