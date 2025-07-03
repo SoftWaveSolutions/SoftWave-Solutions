@@ -1,0 +1,20 @@
+---
+layout: layout.njk
+title: Soft Blog
+permalink: "blog/index.html"
+---
+
+<h1 class="blog-title">SoftWave Blog</h1>
+
+  <section class="blog-grid">
+    {% for post in collections.posts %}
+      <a href="{{ post.url }}" class="card-post">
+        <img src="{{ post.data.thumbnail }}" alt="Imagem do post" />
+        <div class="card-content">
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.templateContent | striptags | truncate(100, true, '...') }}</p>
+          <span class="read-more">Ler mais</span>
+        </div>
+      </a>
+    {% endfor %}
+  </section>

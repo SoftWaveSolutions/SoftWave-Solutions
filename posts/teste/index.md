@@ -1,6 +1,8 @@
 ---
-title: Teste
-date: 2025-07-01T23:01:27.105Z
-thumbnail: discord.png
+title: Test
+date: 2025-07-02
+thumbnail: /img/uploads/foto.jpg
+layout: post.njk
 ---
+
 T﻿este de postagem
