@@ -12,8 +12,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_redirects");
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("posts/*.md").reverse();
+    return collectionApi.getFilteredByGlob("posts/**/*.md").reverse();
   });
+
 
   return {
     dir: {
