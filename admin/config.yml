@@ -15,7 +15,7 @@ collections:
     format: "frontmatter"
     frontmatter:
       layout: "post.njk"
-      permalink: "/blog/{{slug}}/index.html"
+      permalink: "/post/{{slug}}/index.html"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
