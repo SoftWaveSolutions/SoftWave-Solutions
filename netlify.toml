@@ -1,0 +1,9 @@
+[build]
+  command = "npx @11ty/eleventy"
+  publish = "_site"
+
+[dev]
+  command = "npx @11ty/eleventy --serve"
+  port = 8888
+  targetPort = 8080
+  publish = "_site"
