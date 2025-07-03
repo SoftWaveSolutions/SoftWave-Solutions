@@ -19,5 +19,10 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Imagem de capa", name: "thumbnail", widget: "image" }
+      - label: "Imagem de capa"
+        name: "thumbnail"
+        widget: "image"
+        media_library:
+          config:
+            public_path: /img/uploads/
       - { label: "Corpo", name: "body", widget: "markdown" }
