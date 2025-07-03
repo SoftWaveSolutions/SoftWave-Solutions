@@ -10,7 +10,7 @@ collections:
     label: "Postagens"
     folder: "posts"
     create: true
-    slug: "{{slug}}"
+    slug: "post/{{slug}}"
     extension: "md"
     format: "frontmatter"
     fields:
