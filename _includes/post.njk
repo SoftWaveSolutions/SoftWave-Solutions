@@ -4,7 +4,7 @@ layout: layout.njk
 <article class="post-container">
   <h1 class="post-title">{{ title }}</h1>
   <p class="post-date">{{ date | date("dd/MM/yyyy") }}</p>
-  <img src="{{ thumbnail }}" alt="Imagem de capa" class="post-thumbnail" />
+  <img src="{{ thumbnail | url }}" alt="Imagem de capa" class="post-thumbnail" />
   <div class="post-content">
     {{ content | safe }}
   </div>

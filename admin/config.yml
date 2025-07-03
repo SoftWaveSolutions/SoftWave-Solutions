@@ -10,14 +10,14 @@ collections:
     label: "Postagens"
     folder: "posts"
     create: true
-    slug: "post/{{slug}}"
+    slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    frontmatter:
+      layout: "post.njk"
+      permalink: "/blog/{{slug}}/index.html"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Imagem de capa", name: "thumbnail", widget: "image" }
       - { label: "Corpo", name: "body", widget: "markdown" }
-    frontmatter:
-      layout: "post.njk"
-      permalink: "post/{{slug}}/index.html"
