@@ -1,0 +1,26 @@
+.blog-texts{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.blog-grid {
+    display: flex;
+    text-align: center;
+    width: 400px;
+    gap: 20px;
+}
+
+.post-img{
+    width: 400px;
+    height: 200px;
+}
+
+.post-title{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.post-title a{
+    text-decoration: none;
+    color: #333;
+}
