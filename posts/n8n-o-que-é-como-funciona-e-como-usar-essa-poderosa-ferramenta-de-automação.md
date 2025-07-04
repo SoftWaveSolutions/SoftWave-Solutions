@@ -5,6 +5,10 @@ thumbnail: /img/uploads/images.jpg
 ---
 <!--StartFragment-->
 
+# n8n: O que é, como funciona e como usar essa poderosa ferramenta de automação
+
+
+
 Se você está buscando uma solução completa para **automatizar tarefas**, **conectar APIs** e **criar fluxos inteligentes** entre ferramentas, o **n8n** pode ser a melhor opção do mercado. E o melhor: é **open source**, gratuito e totalmente personalizável.
 
 ## O que é o n8n?
@@ -23,11 +27,11 @@ Esses nós se conectam entre si criando **workflows (fluxos de trabalho)**, que 
 
 ## Principais recursos e vantagens do n8n
 
-###  Código aberto e gratuito
+### Código aberto e gratuito
 
 Você pode **instalar o n8n no seu próprio servidor** sem pagar nada, mantendo o controle total sobre seus dados e integrações.
 
-###  Mais de 400 integrações prontas
+### Mais de 400 integrações prontas
 
 Incluindo serviços populares como:
 
@@ -40,11 +44,11 @@ Incluindo serviços populares como:
 * APIs REST/GraphQL
 * Bancos de dados SQL e NoSQL
 
-###  Interface visual intuitiva
+### Interface visual intuitiva
 
 Você constrói seus fluxos com **drag and drop**, sem precisar escrever código. Mas, se quiser personalizar, há suporte a **JavaScript nativo** para lógica avançada.
 
-###  Alta flexibilidade
+### Alta flexibilidade
 
 O n8n permite:
 
@@ -79,7 +83,6 @@ docker run -it --rm \
   -p 5678:5678 \
   -v ~/.n8n:/home/node/.n8n \
   n8nio/n8n
-
 ```
 
 Acesse: `http://localhost:5678`
