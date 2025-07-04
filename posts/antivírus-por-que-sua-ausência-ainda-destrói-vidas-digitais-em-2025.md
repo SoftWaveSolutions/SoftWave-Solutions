@@ -6,8 +6,6 @@ layout: post.njk
 ---
 <!--StartFragment-->
 
-# **Antivírus: Por que sua ausência ainda destrói vidas digitais em 2025**
-
 Num cenário onde tudo está online — seu banco, sua vida, sua empresa — **segurança digital não é mais luxo, é sobrevivência**. E o que parece simples, como não instalar um antivírus ou ignorar uma atualização, pode abrir as portas do inferno cibernético. Literalmente.
 
 Se você ainda pensa que “isso não vai acontecer comigo”, essa matéria é pra te acordar.
