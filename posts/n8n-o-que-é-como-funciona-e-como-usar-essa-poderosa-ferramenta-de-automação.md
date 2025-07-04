@@ -2,11 +2,8 @@
 title: "n8n: O que é, como funciona e como usar essa poderosa ferramenta de automação"
 date: 2025-07-04T09:54:27.071Z
 thumbnail: /img/uploads/images.jpg
-layout: post.njk
 ---
 <!--StartFragment-->
-
-# n8n: O que é, como funciona e como usar essa poderosa ferramenta de automação
 
 Se você está buscando uma solução completa para **automatizar tarefas**, **conectar APIs** e **criar fluxos inteligentes** entre ferramentas, o **n8n** pode ser a melhor opção do mercado. E o melhor: é **open source**, gratuito e totalmente personalizável.
 
