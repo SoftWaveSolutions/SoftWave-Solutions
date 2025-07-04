@@ -2,6 +2,7 @@
 title: "n8n: O que é, como funciona e como usar essa poderosa ferramenta de automação"
 date: 2025-07-04T09:54:27.071Z
 thumbnail: /img/uploads/images.jpg
+layout: post.njk
 ---
 <!--StartFragment-->
 

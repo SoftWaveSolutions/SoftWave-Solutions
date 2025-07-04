@@ -2,6 +2,7 @@
 title: "Antivírus: Por que sua ausência ainda destrói vidas digitais em 2025"
 date: 2025-07-04T14:37:32.041Z
 thumbnail: /img/uploads/antivirus.webp
+layout: post.njk
 ---
 <!--StartFragment-->
 
