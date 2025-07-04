@@ -3,7 +3,7 @@ title: "n8n: Automatize Tudo sem Limites"
 date: 2025-07-03T23:51:00.921Z
 thumbnail: images.jpg
 layout: post.njk
-permalink: blog/{{slug}}/index.html
+permalink: /post/n8n-automatize-tudo-sem-limites/index.html
 ---
 <!--StartFragment-->
 
