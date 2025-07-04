@@ -13,9 +13,6 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
-    frontmatter:
-      layout: "post.njk"
-      permalink: "/post/{{slug}}/index.html"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
@@ -26,3 +23,5 @@ collections:
           config:
             public_path: /img/uploads/
       - { label: "Corpo", name: "body", widget: "markdown" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/post/{{slug}}/index.html" }
