@@ -7,8 +7,6 @@ thumbnail: /img/uploads/images.jpg
 
 # n8n: O que é, como funciona e como usar essa poderosa ferramenta de automação
 
-
-
 Se você está buscando uma solução completa para **automatizar tarefas**, **conectar APIs** e **criar fluxos inteligentes** entre ferramentas, o **n8n** pode ser a melhor opção do mercado. E o melhor: é **open source**, gratuito e totalmente personalizável.
 
 ## O que é o n8n?
@@ -89,7 +87,7 @@ Acesse: `http://localhost:5678`
 
 ### 3. Servidor próprio (Self-hosted)
 
-Instale em um VPS ou máquina local com Node.js + banco de dados. Ótimo para produção.
+Instale em um VPS ou máquina local com Node.js + banco de dados. Ótimo para produção. 
 
 ## n8n é melhor que Zapier?
 
