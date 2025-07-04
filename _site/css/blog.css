@@ -36,6 +36,12 @@
     color: #333;
 }
 
+.post-text{
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
 .read-link {
   display: inline-block;
   padding: 0.5rem 1.5rem;
