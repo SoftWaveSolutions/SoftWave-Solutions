@@ -26,6 +26,8 @@ Sem antivírus, seu computador ou celular vira um alvo fácil para hackers, bots
 * **Worms**: Se espalham em redes, infectando vários dispositivos.
 * **Keyloggers**: Gravadores de tudo que você digita — de senhas a mensagens.
 
+![Virus](/img/uploads/antivirus_1745280239470.webp "Virus")
+
 ## Casos reais de ataques cibernéticos por falta de antivírus ou descuido
 
 ### **Ransomware WannaCry (2017)**
