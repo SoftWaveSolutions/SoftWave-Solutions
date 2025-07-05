@@ -2,6 +2,7 @@
 title: "Entenda a 2FA: Proteja suas contas com a Autenticação de Dois Fatores"
 date: 2025-07-05T03:51:06.449Z
 thumbnail: /img/uploads/blog-head_how2-enable-2fa-totp-on-a-vps.webp
+layout: post.njk
 ---
 <!--StartFragment-->
 

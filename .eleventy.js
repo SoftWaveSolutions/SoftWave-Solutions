@@ -1,9 +1,15 @@
 const { DateTime } = require("luxon");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("date", (value, format = "dd/MM/yyyy") => {
-    return DateTime.fromISO(value).toFormat(format);
+    return DateTime.fromISO(value, { zone: 'utc' }).toFormat(format);
+  });
+
+  eleventyConfig.addFilter("readingTime", (content) => {
+    const words = content.split(/\s+/).length;
+    const minutes = Math.ceil(words / 200);
+    return `${minutes}`;
   });
 
   eleventyConfig.addPassthroughCopy("css");

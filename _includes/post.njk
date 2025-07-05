@@ -3,7 +3,9 @@ layout: layout.njk
 ---
 <article class="post-container">
   <h1 class="post-title">{{ title }}</h1>
-  <p class="post-date">{{ date | date("dd/MM/yyyy") }}</p>
+  <p class="date">
+    {{ date.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" }) }}
+  </p>
   <img src="{{ thumbnail }}" alt="Imagem de capa" class="post-thumbnail" />
   <div class="post-content">
     {{ content | safe }}

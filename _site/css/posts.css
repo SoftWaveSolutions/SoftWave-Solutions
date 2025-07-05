@@ -21,7 +21,7 @@
 }
 
 .post-thumbnail {
-    width: 90%;
+    width: 70%;
     height: 560px;
     object-fit: cover;
     border-radius: 8px;
@@ -38,16 +38,27 @@
     margin-left: 20px;
 }
 
+.post-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin: 20px 30px;
+    list-style: none;
+}
+
+
 .post-content p {
     margin: 15px 0;
 }
 
 .post-content img {
-    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    width: 50%;
     height: 560px;
     border-radius: 8px;
     padding: 10px 0;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 .post-content pre {
