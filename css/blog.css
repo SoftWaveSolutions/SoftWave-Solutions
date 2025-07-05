@@ -13,30 +13,29 @@
     margin: 25px 25px 50px 25px ;
 }
 
-.post-container {
+.preview-container {
     max-width: 500px;
-
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
 
-.post-img{
+.preview-img{
     width: 400px;
     height: 200px;
 }
 
-.post-title{
+.preview-title{
     font-size: 20px;
     margin: 10px 0;
 }
 
-.post-title a{
+.preview-title a{
     text-decoration: none;
     color: #333;
 }
 
-.post-text{
+.preview-text{
     font-size: 16px;
     color: #666;
     margin: 10px 0;

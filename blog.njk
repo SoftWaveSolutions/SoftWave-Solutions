@@ -11,10 +11,10 @@ permalink: "blog/index.html"
 
     <div class="blog-grid">
       {% for post in collections.posts | reverse %}
-        <div class="post-container">
-          <img src="{{ post.data.thumbnail }}" alt="Imagem do post" class="post-img">
-          <h2 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="post-text">{{ post.templateContent | safe | striptags | truncate(100, true, '...') }}</p>
+        <div class="preview-container">
+          <img src="{{ post.data.thumbnail }}" alt="Imagem do post" class="preview-img">
+          <h2 class="preview-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p class="preview-text">{{ post.templateContent | safe | striptags | truncate(100, true, '...') }}</p>
           <a class="read-link" href="{{ post.url }}">Ler mais</a>
         </div>
       {% endfor %}
