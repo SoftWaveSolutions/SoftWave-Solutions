@@ -30,8 +30,6 @@ Flexibilidade: Adapta-se a diversas metodologias, seja Scrum, Kanban ou algo mai
 
 Dica Extra: Integre o Trello com outras ferramentas que você já usa, como Slack ou Google Drive, para um fluxo de trabalho ainda mais coeso.
 
-
-
 2. ## Notion: Seu Workspace Tudo-em-Um Personalizável
 
 Imagine um local onde você pode criar notas, gerenciar tarefas, construir wikis de conhecimento, organizar bases de dados e até planejar seu dia. Isso é o Notion. Sua versatilidade é o que o torna tão poderoso para profissionais de TI, que frequentemente precisam documentar processos, criar especificações técnicas e acompanhar diferentes frentes.
@@ -50,7 +48,7 @@ Base de Conhecimento: Construa uma wiki interna para sua equipe com tutoriais, g
 
 Dica Extra: Explore os templates da comunidade Notion para começar rapidamente e adapte-os ao seu fluxo de trabalho de desenvolvimento.
 
-3. Slack: Comunicação Eficiente para Equipes Conectadas
+3. ## Slack: Comunicação Eficiente para Equipes Conectadas
 
 E-mails podem ser um fardo quando a comunicação precisa ser ágil e direta. O Slack revolucionou a comunicação interna em equipes, especialmente em TI, onde a troca de informações em tempo real é crucial para o sucesso dos projetos.
 
