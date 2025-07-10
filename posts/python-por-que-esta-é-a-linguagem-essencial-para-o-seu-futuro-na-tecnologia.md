@@ -19,8 +19,6 @@ Python é uma linguagem de programação de alto nível, interpretada, de propó
 * **Versatilidade Inigualável:** Python não é uma linguagem de nicho. Sua aplicabilidade se estende por uma gama impressionante de domínios, tornando-a uma ferramenta valiosa para qualquer desenvolvedor, desde a criação de sites até a análise de dados complexos.
 * **Ecossistema Vasto e Comunidade Ativa:** A Python possui uma das maiores e mais ativas comunidades de desenvolvedores do mundo. Isso se traduz em uma riqueza de recursos, bibliotecas (pacotes de código pré-escrito) e frameworks que aceleram o desenvolvimento e oferecem soluções prontas para quase qualquer desafio. Se você tiver uma dúvida, é quase certo que alguém já a teve e a solução está disponível online.
 
-  ![](/img/uploads/screenshot-2025-07-10-192814.png)
-
 ## Onde o Python Brilha: As Principais Áreas de Aplicação
 
 A popularidade do Python não é à toa. Suas características o tornam a escolha ideal para várias das áreas mais quentes e inovadoras da tecnologia:
@@ -35,10 +33,6 @@ A popularidade do Python não é à toa. Suas características o tornam a escolh
   ![]()
 
 ## O Mercado de Trabalho e o Futuro com Python
-
-
-
-
 
 A demanda por profissionais de Python está em constante crescimento e não mostra sinais de desaceleração. Empresas de todos os portes, desde startups inovadoras até gigantes da tecnologia e instituições financeiras, buscam desenvolvedores com experiência em Python para preencher vagas em áreas como:
 
@@ -72,8 +66,6 @@ Aqui estão algumas das primeiras coisas que você aprenderá e usará constante
 * **Variáveis:** Usadas para armazenar dados. Não é preciso declarar o tipo da variável em Python, a linguagem infere automaticamente.
 * **Comentários (`#`):** Usados para adicionar anotações no código que não serão executadas. Fundamental para tornar seu código compreensível.
 * nome_da_empresa = "Softwave" # Atribui o nome da empresa
-
-
 * **Estruturas Condicionais (`if`, `elif`, `else`):** Para tomar decisões no código, executando blocos diferentes com base em condições.
 * temperatura = 25
   if temperatura > 30:
@@ -82,22 +74,16 @@ Aqui estão algumas das primeiras coisas que você aprenderá e usará constante
       print("Muito frio!")
   else:
       print("Temperatura agradável.")
-
-
 * **Loops (`for`, `while`):** Para repetir blocos de código.
 
   * **`for` (para iterar sobre sequências):**
   * frutas = \["maçã", "banana", "cereja"]
     for fruta in frutas:
         print(fruta)
-
-
   * **`while` (enquanto uma condição for verdadeira):**
 * **Funções (`def`):** Para agrupar blocos de código que realizam uma tarefa específica, tornando o código reutilizável e organizado.
 * saudar("Visitante")
   saudar("Equipe Softwave")
-
-
 
 ### Conclusão
 
