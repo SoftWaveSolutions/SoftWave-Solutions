@@ -4,7 +4,6 @@ title: "Otimize Seu Dia: 5 Ferramentas de Produtividade Indispensáveis para
 date: 2025-07-08T19:29:00.000Z
 thumbnail: /img/uploads/screenshot-2025-07-07-164114.png
 layout: post.njk
-permalink: /post/{{slug}}/index.html
 ---
 <!--StartFragment-->
 

@@ -3,7 +3,6 @@ title: "Python: Por Que Esta É a Linguagem Essencial Para o Seu Futuro na Tecno
 date: 2025-07-10T23:30:00.000Z
 thumbnail: /img/uploads/screenshot-2025-07-10-191221.png
 layout: post.njk
-permalink: /post/{{slug}}/index.html
 ---
 <!--StartFragment-->
 
