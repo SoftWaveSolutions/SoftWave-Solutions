@@ -149,6 +149,7 @@
       padding: 15px;
       border: 1px solid #ccc;
       text-align: left;
+      vertical-align: top;
     }
     .plan-table th {
       background-color: #0051a3;
@@ -288,35 +289,53 @@
   </section>
 
   <section class="plans" aria-label="Planos e preços">
-  <h2>Escolha o Plano Ideal</h2>
-  <table class="plan-table" role="table">
-    <thead>
-      <tr>
-        <th scope="col">Plano</th>
-        <th scope="col">Mensalidade</th>
-        <th scope="col">Serviços</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial', '_blank')" style="cursor:pointer;">
-        <td><strong>Essencial</strong></td>
-        <td>R$ 49,00</td>
-        <td>Antivírus licenciado, 1 atendimento remoto, manutenção básica</td>
-      </tr>
-      <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Pro', '_blank')" style="cursor:pointer;">
-        <td><strong>Pro</strong></td>
-        <td>R$ 99,00</td>
-        <td>Monitoramento 24h, suporte ilimitado via chat, relatórios mensais</td>
-      </tr>
-      <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Premium', '_blank')" style="cursor:pointer;">
-        <td><strong>Premium</strong></td>
-        <td>R$ 179,00</td>
-        <td>Proteção avançada EDR, firewall, acesso remoto seguro, atendimento prioritário</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
+    <h2>Escolha o Plano Ideal</h2>
+    <table class="plan-table" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Plano</th>
+          <th scope="col">Mensalidade</th>
+          <th scope="col">Serviços</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Essencial', '_blank')" style="cursor:pointer;">
+          <td><strong>Essencial</strong></td>
+          <td>R$ 49,00</td>
+          <td>
+            <ul style="padding-left: 18px; margin: 0;">
+              <li>Antivírus licenciado</li>
+              <li>1 atendimento remoto</li>
+              <li>Manutenção básica</li>
+            </ul>
+          </td>
+        </tr>
+        <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Pro', '_blank')" style="cursor:pointer;">
+          <td><strong>Pro</strong></td>
+          <td>R$ 99,00</td>
+          <td>
+            <ul style="padding-left: 18px; margin: 0;">
+              <li>Monitoramento 24h</li>
+              <li>Suporte ilimitado via chat</li>
+              <li>Relatórios mensais</li>
+            </ul>
+          </td>
+        </tr>
+        <tr onclick="window.open('https://wa.me/55SEUNUMEROAQUI?text=Olá,%20tenho%20interesse%20no%20Plano%20Premium', '_blank')" style="cursor:pointer;">
+          <td><strong>Premium</strong></td>
+          <td>R$ 179,00</td>
+          <td>
+            <ul style="padding-left: 18px; margin: 0;">
+              <li>Proteção avançada EDR</li>
+              <li>Firewall</li>
+              <li>Acesso remoto seguro</li>
+              <li>Atendimento prioritário</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
   <section class="testimonial" aria-label="Depoimentos dos clientes">
     <h2>O que dizem nossos clientes:</h2>
@@ -331,8 +350,6 @@
       <a href="https://wa.me/55SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer">Fale no WhatsApp</a>
     </p>
   </footer>
-
-  
 
 </body>
 </html>
