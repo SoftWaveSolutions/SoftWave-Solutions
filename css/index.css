@@ -172,10 +172,11 @@
 }
 
 .service-card {
-  width: 300px;
-  height: 300px;
+  width: 240px;
+  height: 240px;
   position: relative;
   perspective: 1000px;
+  transition: width 0.5s, height 0.5s; /* Transição suave */
 }
 
 .card-inner {
@@ -191,12 +192,10 @@
 }
 
 .service-card:hover {
-    width: 400px;
-  height: 400px;
-  transition: transform 1.5s, width 0.5s, height 0.5s;
+  width: 280px;
+  height: 280px;
   z-index: 1;
 }
-
 
 .card-front, .card-back {
   position: absolute;
@@ -209,7 +208,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem; /* menos padding para ficar mais compacto */
   background-color: #f4f4f4;
 }
 
@@ -243,11 +242,12 @@
   background-color: #0f9e8c;
 }
 
- .card-front .fas{
-  font-size: 3rem;
+.card-front .fas {
+  font-size: 2.5rem; /* ícone menor e proporcional */
   color: var(--secundary-color);
   margin-bottom: 1rem;
 }
+
 
 .contacts-icons i {
   font-size: 1.5rem;
