@@ -9,7 +9,6 @@
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     margin: 25px 25px 50px 25px ;
 }
