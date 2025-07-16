@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-  // Filtros
+
   eleventyConfig.addFilter("date", (value, format = "dd/MM/yyyy") => {
     return DateTime.fromISO(value, { zone: "utc" }).toFormat(format);
   });
@@ -12,7 +12,6 @@ module.exports = function (eleventyConfig) {
     return `${minutes}`;
   });
 
-  // Pastas e arquivos que precisam ser copiados direto
   eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("services.html");
   eleventyConfig.addPassthroughCopy("about.html");
@@ -24,7 +23,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_redirects");
 
-  // Coleção de posts
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("posts/**/*.md").reverse();
   });
