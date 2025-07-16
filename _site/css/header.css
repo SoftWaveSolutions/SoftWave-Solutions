@@ -9,6 +9,10 @@
     height: 100px;
     width: 100px;
 }
+
+.logo {
+    transform: scale(1.05);
+}
 nav{
     position: relative;
 }
