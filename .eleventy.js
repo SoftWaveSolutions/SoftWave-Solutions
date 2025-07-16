@@ -1,9 +1,9 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-
+  // Filtros
   eleventyConfig.addFilter("date", (value, format = "dd/MM/yyyy") => {
-    return DateTime.fromISO(value, { zone: 'utc' }).toFormat(format);
+    return DateTime.fromISO(value, { zone: "utc" }).toFormat(format);
   });
 
   eleventyConfig.addFilter("readingTime", (content) => {
@@ -12,22 +12,29 @@ module.exports = function (eleventyConfig) {
     return `${minutes}`;
   });
 
+  // Pastas e arquivos que precisam ser copiados direto
+  eleventyConfig.addPassthroughCopy("index.html");
+  eleventyConfig.addPassthroughCopy("services.html");
+  eleventyConfig.addPassthroughCopy("about.html");
+  eleventyConfig.addPassthroughCopy("contact.html");
+  eleventyConfig.addPassthroughCopy("suporte.html");
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_redirects");
 
+  // Coleção de posts
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("posts/**/*.md").reverse();
   });
-
 
   return {
     dir: {
       input: ".",
       includes: "_includes",
-      output: "_site"
+      output: "_site",
     },
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "njk",
   };
 };
