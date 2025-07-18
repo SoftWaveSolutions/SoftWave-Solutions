@@ -3,7 +3,6 @@ title: "Mantenha Seu Bolso Seguro: Dicas Essenciais para Blindar Seu Smartphone 
 date: 2025-07-15T22:30:00.000Z
 thumbnail: /img/uploads/screenshot-2025-07-15-143747.png
 layout: post.njk
-permalink: /post/{{slug}}/index.html
 ---
 <!--StartFragment-->
 

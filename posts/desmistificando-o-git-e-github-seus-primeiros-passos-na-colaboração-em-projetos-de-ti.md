@@ -4,7 +4,6 @@ title: "Desmistificando o Git e GitHub: Seus Primeiros Passos na Colaboração e
 date: 2025-07-18T00:33:28.998Z
 thumbnail: /img/uploads/github.png
 layout: post.njk
-permalink: /post/{{slug}}/index.html
 ---
 <!--StartFragment-->
 
