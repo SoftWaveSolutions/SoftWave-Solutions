@@ -3,7 +3,7 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("date", (value, format = "dd/MM/yyyy") => {
-    return DateTime.fromISO(value, { zone: "utc" }).toFormat(format);
+    return DateTime.fromISO(value, { zone: 'utc' }).toFormat(format);
   });
 
   eleventyConfig.addFilter("readingTime", (content) => {
